@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>URL Shortener</title>
+    <title>Your URL Shortened</title>
     <style>
     body {
         font-family:"Gill Sans", "Gill Sans MT", Sans-Serif;
@@ -67,7 +67,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>URL Shortlink App</h1>
+        <h1>Become Chode</h1>
+        <p>What's a good name for a link shortening site?</p>
         <form method="post">
             <input type="text" value="<%= h(params[:url]) %>" name="url" id="url" />
             <input type="submit" value="shorten" id="submit" />
@@ -76,7 +77,7 @@
         <% if @shortcode %>
         <div class="result">
             Your shortened URL is:
-            <a href="becomechode.com/<%= @shortcode %>">becomechode.com<%= @shortcode %></a>
+            <a href="<%= @shortcode %>">becomechode.com/<%= @shortcode %></a>
         </div>
         <% end %>
     </div>
